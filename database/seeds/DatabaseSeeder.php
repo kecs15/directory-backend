@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $lines = array_map('str_getcsv', file('/home/kedin/Desktop/pruebas/pruebas.csv'));
+        $lines = array_map('str_getcsv', file('/path/to/csv/file.csvs'));
         foreach($lines as $line){
             $data = [
                     'first_name' => $line[0],
