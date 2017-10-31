@@ -16,7 +16,7 @@ class CreateEmailsTable extends Migration
         Schema::create('emails', function (Blueprint $table) {
             $table->increments('id');
             $table->string('email');
-            $table->integer('employee_id')->unsigned();
+            $table->unsignedInteger('employee_id')->index();
             $table->boolean('personal')->default(true);
             $table->timestamps();
 

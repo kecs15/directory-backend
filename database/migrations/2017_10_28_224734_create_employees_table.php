@@ -30,7 +30,6 @@ class CreateEmployeesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('employees', function (Blueprint $table){
-        });
+        Schema::dropIfExists('employees');
     }
 }
